@@ -23,9 +23,9 @@
 	</head>
 	<body>
 		<header>
-			<h1>
+			<h1 style="    background: #fdfdfd;			box-shadow: none;">
 				<button type="button" class="open-nav" id="open-nav"></button>
-				<a href="{{ site.baseurl }}/" style="display: block;				font-size: 35px;				text-decoration: none;				font-weight: 600;				color: #ff8204;				line-height: 40px;				width: 118px;">Job<span style="    color: #0aac41;">ned</span></a>
+				<a href="{{ site.baseurl }}/" style="display: block;				font-size: 35px;				text-decoration: none;				font-weight: 600;				color: #ff8204;				line-height: 40px;				width: 122px;margin: 0 auto;">Job<span style="    color: #0aac41;">ned</span></a>
 			</h1>
 
 			<form action="{{ site.baseurl }}/search/" method="get">
@@ -34,12 +34,6 @@
 			</form>
 
 			{% include sidebar.html %}
-
-			<p class="copyright">
-				<a href="https://cloudcannon.com/">
-					Template by CloudCannon
-				</a>
-			</p>
 		</header>
 		<div class="main">
 			{{ content }}
