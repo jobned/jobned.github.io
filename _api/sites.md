@@ -33,7 +33,7 @@ right_code_blocks:
     language: json
   - code_block: |2-
       {
-        "error": "Projects not found"
+        "error": "Wrong api key"
       }
     title: Error
     language: json
