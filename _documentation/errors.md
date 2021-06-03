@@ -1,23 +1,15 @@
 ---
-title: Errors
+title: Ошибкт
 position_number: 3
 parameters:
   - name:
     content:
 content_markdown: |-
-  | Code | Name | Description |
-  | --- | --- | --- |
-  | 200 | OK | Success |
-  | 201 | Created | Creation Successful |
-  | 400 | Bad Request | We could not process that action |
-  | 403 | Forbidden | We couldn't authenticate you |
-
-  All errors will return JSON in the following format:
+  Все ошибки вернут JSON в следующем формате:
 left_code_blocks:
   - code_block: |-
       {
-        "error": true,
-        "message": "error message here"
+        "error": "error message here"
       }
     title: Response
     language: json
