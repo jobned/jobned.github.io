@@ -32,6 +32,6 @@ right_code_blocks:
       $responce = curl_exec($ch);
       curl_close($ch);
       var_dump(json_decode($responce, true));
-    title: Curl
+    title: PHP
     language: php
 ---
