@@ -1,18 +1,25 @@
 ---
-title: /books
+title: /projects/
 position_number: 1.0
 type: get
-description: List all books
+description: Получить список проектов
 parameters:
-  - name: offset
-    content: Offset the results by this amount
-  - name: limit
-    content: Limit the number of books returned
+  - name: sites
+    content: Массив фильтрации
+  - name: keywords
+    content: Массив ключевых слов
+  - name: start_from
+    content: Получить проекты новее определенного id
+sites:
+  - name: sites
+    content: Массив фильтрации
+  - name: keywords
+    content: Массив ключевых слов
+  - name: start_from
+    content: Получить проекты новее определенного id
 content_markdown: |-
-  This call will return a maximum of 100 books
+  Этот вызов вернет максимум 100 проектов
   {: .info }
-
-  Lists all the photos you have access to. You can paginate by using the parameters listed above.
 left_code_blocks:
   - code_block: |-
       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
