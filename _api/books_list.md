@@ -38,8 +38,8 @@ left_code_blocks:
         "keywords" : ["html", "web"], // массив с включевыми словами или словосочетаниями
         "start_from" : 1622644515080 // получить проекты новее id
       }
-    title: PHP
-    language: php
+    title: Пример массива тела запроса
+    language: json
 right_code_blocks:
   - code_block: |2-
       [
