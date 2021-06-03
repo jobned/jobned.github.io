@@ -6,28 +6,18 @@ description: Получить список проектов
 parameters:
   - name: sites
     content: Массив фильтрации
-    - code_block: |-
-    "sites": [
-        {
-            "id" : 1,
-            "subcat" : [1,2],
-            "budgets" : {
-            }
-        },
-        {
-            "id" : 2,
-            "budgets" : {
-                "budget" : 300,
-                "budget_to" : 1500,
-                "budget_per_hour" : 15,
-                "budget_per_hour_to" : 2000
-            }
-        }
-    ]
   - name: keywords
     content: Массив ключевых слов
-    - code_block: |-
-    "keywords" : ["html", "web"]
+  - name: start_from
+    content: Получить проекты новее определенного id
+title: sites
+position_number: 1.1
+description: Массив фильтрации
+parameters:
+  - name: sites
+    content: Массив фильтрации
+  - name: keywords
+    content: Массив ключевых слов
   - name: start_from
     content: Получить проекты новее определенного id
 content_markdown: |-
