@@ -20,13 +20,13 @@ left_code_blocks:
 right_code_blocks:
   - code_block: |-
       $ch = curl_init('https://api.jobned.com/v1/sites/');
-      $token = 'as214SY@Jlsa<Safak';
+      $token = 'Your API key';
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET"); 
       curl_setopt($ch, CURLOPT_HEADER, true);
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch,CURLOPT_SSL_VERIFYHOST, false);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
       $authorization = 'Authorization: Bearer ' . $token;
       curl_setopt($ch, CURLOPT_HTTPHEADER, $authorization);
       $responce = curl_exec($ch);
