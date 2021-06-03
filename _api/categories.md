@@ -38,22 +38,22 @@ right_code_blocks:
             ]
         },
         {
-            "id": "25",
+            "id": "21",
             "site_id": "2",
-            "name": "Продвижение",
+            "name": "Программирование",
             "subcategories": [
                 {
-                    "id": "299",
+                    "id": "243",
                     "site_id": "2",
-                    "category_id": "23",
-                    "name": "Настройка ПО/серверов"
+                    "category_id": "21",
+                    "name": "1C"
                 },
                 {
-                    "id": "300",
+                    "id": "244",
                     "site_id": "2",
-                    "category_id": "23",
-                    "name": "Обработка данных"
-                }
+                    "category_id": "21",
+                    "name": "Blockchain"
+                },
             ]
         }
       ]
