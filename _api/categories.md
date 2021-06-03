@@ -35,7 +35,7 @@ right_code_blocks:
                     "category_id": "1",
                     "name": "Веб-программирование"
                 }
-            }
+            ]
         },
         {
             "id": "25",
@@ -54,7 +54,7 @@ right_code_blocks:
                     "category_id": "23",
                     "name": "Обработка данных"
                 }
-            }
+            ]
         }
       ]
     title: Response
