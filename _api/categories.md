@@ -1,7 +1,7 @@
 ---
 title: /categories/
 position_number: 1.3
-type: get
+type: post
 description: Получить список категорий
 parameters:
   - name: sites
@@ -10,10 +10,29 @@ content_markdown: |-
   Возвращает массив категорий и подкатегорий.
 left_code_blocks:
   - code_block: |-
-      {
-        "sites" : [1,2] // массив бирж
-      }
-    title: Пример массива запроса
+        <?php
+        $base = 'https://api.jobned.com/v1';
+        $ch = curl_init($base . '/categories/');
+        $token = 'as214SY@Jlsa<Safak';
+        $data = array(
+            "sites" => [1,2] // массив бирж
+        );
+        $data_string = json_encode($data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        $authorization = 'Authorization: Bearer ' . $token;
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array($authorization));
+        $responce = curl_exec($ch);
+        curl_close($ch);
+        $responce = json_decode($responce, true);
+        var_dump($responce);
+        ?>
+    title: Пример запроса php
     language: php
 right_code_blocks:
   - code_block: |2-

@@ -1,7 +1,7 @@
 ---
 title: /projects/
 position_number: 1.0
-type: get
+type: post
 description: Получить список проектов
 parameters:
   - name: sites
@@ -22,7 +22,7 @@ left_code_blocks:
       $ch = curl_init($base . '/projects/');
       $token = 'as214SY@Jlsa<Safak';
       $data = array(
-          "sites" => [ // массивы фильтрации по биржам, категориям, бюджетам
+        "sites" => [ // массивы фильтрации по биржам, категориям, бюджетам
             [
               "id" => 1, // id биржи
               "cat" => [1], // массив id картегорий
@@ -31,17 +31,17 @@ left_code_blocks:
             [
               "id" => 2, // id биржи
               "budgets" => [ // массив фильтрации по бюджетам (ипользуется валюта биржи)
-                "budget" => 300, // бюджет от
-                "budget_to" => 1500, // бюджет до
-                "budget_per_hour" => 15, // бюджет в час от
-                "budget_per_hour_to" => 2000, // бюджет в час до
-                "price_per_symbol" => 10 // бюджет за 1000 знаков (только для контентных бирж)
-              ]
+              "budget" => 300, // бюджет от
+              "budget_to" => 1500, // бюджет до
+              "budget_per_hour" => 15, // бюджет в час от
+              "budget_per_hour_to" => 2000, // бюджет в час до
+              "price_per_symbol" => 10 // бюджет за 1000 знаков (только для контентных бирж)
             ]
-          ],
-          "keywords" => ["html", "web"], // массив с ключевыми словами или словосочетаниями
-          "start_from" => 1622644515080 // получить проекты новее id в таком случае массив будет построен от старых к новым
-        );
+          ]
+        ],
+        "keywords" => ["html", "web"], // массив с ключевыми словами или словосочетаниями
+        "start_from" => 1622644515080 // получить проекты новее id в таком случае массив будет построен от старых к новым
+      );
       $data_string = json_encode($data);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
