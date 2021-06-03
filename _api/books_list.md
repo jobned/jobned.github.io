@@ -11,7 +11,7 @@ parameters:
   - name: start_from
     content: Получить проекты новее определенного id
 content_markdown: |-
-  Update an existing book in your collection.
+  Возвращает массив проектов относительно выбранных фильтров от новых к старым.
 
   Этот вызов вернет максимум 100 проектов
   {: .info }
