@@ -22,7 +22,7 @@ right_code_blocks:
       <?php
       $base = 'https://api.jobned.com/v1';
       $ch = curl_init($base . '/sites/');
-      $token = 'as214SY@Jlsa<Safak';
+      $token = 'Your API key';
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
