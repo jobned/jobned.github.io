@@ -18,24 +18,7 @@ left_code_blocks:
     title:
     language:
 right_code_blocks:
-  - code_block: |-
-      <?php
-      $base = 'https://api.jobned.com/v1';
-      $ch = curl_init($base . '/sites/');
-      $token = 'Your API key';
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-      curl_setopt($ch, CURLOPT_HEADER, false);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-      $authorization = 'Authorization: Bearer ' . $token;
-      curl_setopt($ch, CURLOPT_HTTPHEADER, array($authorization));
-      $responce = curl_exec($ch);
-      curl_close($ch);
-      $responce = json_decode($responce, true);
-      var_dump($responce);
-      ?>
-    title: PHP
-    language: php
+  - code_block:
+    title:
+    language:
 ---
