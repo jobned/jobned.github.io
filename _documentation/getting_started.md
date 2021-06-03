@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Начало
 position_number: 1
 parameters:
   - name:

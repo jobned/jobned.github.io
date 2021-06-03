@@ -1,5 +1,5 @@
 ---
-title: Ошибкт
+title: Ошибки
 position_number: 3
 parameters:
   - name:
