@@ -5,14 +5,16 @@ type: get
 description: Получить список проектов
 parameters:
   - name: sites
-    content: Массив фильтрации 
-    parameters:
-      - name: sites
-        content: Массив фильтрации 
+    content: Массив фильтрации
   - name: keywords
     content: Массив ключевых слов
   - name: start_from
     content: Получить проекты новее определенного id
+content_markdown: |-
+  Update an existing book in your collection.
+parameters:
+  - name: sites
+    content: Массив фильтрации 
 content_markdown: |-
   Update an existing book in your collection.
 
