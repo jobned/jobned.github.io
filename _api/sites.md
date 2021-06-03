@@ -1,7 +1,7 @@
 ---
 title: /sites/
 position_number: 1.1
-type: get
+type: post
 description: Получить список бирж
 parameters:
   - name:
@@ -16,7 +16,7 @@ left_code_blocks:
         $token = 'Your API key';
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch, CURLOPT_HEADER, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
