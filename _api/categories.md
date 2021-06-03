@@ -1,6 +1,6 @@
 ---
 title: /categories/
-position_number: 1.0
+position_number: 1.3
 type: get
 description: Получить список категорий
 parameters:
