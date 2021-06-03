@@ -10,9 +10,6 @@ parameters:
     content: Массив ключевых слов
   - name: start_from
     content: Получить проекты новее определенного id
-sites:
-  - name: sites
-    content: Массив фильтрации 
 content_markdown: |-
   Update an existing book in your collection1.
 
@@ -20,28 +17,26 @@ content_markdown: |-
   {: .info }
 left_code_blocks:
   - code_block: |-
-      $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-        alert(data);
-      });
-    title: jQuery
-    language: javascript
-  - code_block: |-
-      r = requests.get("http://api.myapp.com/books/", token="YOUR_APP_KEY")
-      print r.text
-    title: Python
-    language: python
-  - code_block: |-
-      var request = require("request");
-      request("http://api.myapp.com/books?token=YOUR_APP_KEY", function (error, response, body) {
-      if (!error && response.statusCode == 200) {
-        console.log(body);
+      {
+        "sites": [
+          {
+            "id" : 1,
+            "subcat" : [1,2],
+          },
+          {
+            "id" : 2,
+            "budgets" : {
+            "budget" : 300,
+            "budget_to" : 1500,
+            "budget_per_hour" : 15,
+            "budget_per_hour_to" : 2000
+            }
+          }
+        ],
+        "keywords" : ["html", "web"]
       }
-    title: Node.js
-    language: javascript
-  - code_block: |-
-      curl http://sampleapi.readme.com/orders?key=YOUR_APP_KEY
-    title: Curl
-    language: bash
+    title: PHP
+    language: php
 right_code_blocks:
   - code_block: |2-
       [
