@@ -5,7 +5,8 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  Вам необходимо пройти аутентификацию для всех запросов API. Для получения API ключа напишите на почту <a href="mailto:partners@jobned.com">partners@jobned.com</a>.
+  Вам необходимо пройти аутентификацию для всех запросов API. 
+  Для получения API ключа напишите на почту <a href="mailto:partners@jobned.com">partners@jobned.com</a>.
 
   Добавьте ключ API ко всем запросам в качестве HTTP заголовка:
   Authorization: Bearer <ваш API ключ>
@@ -17,7 +18,7 @@ left_code_blocks:
     title:
     language:
 right_code_blocks:
-  - code_block: |2-
+  - code_block: |1-
         $ch = curl_init('https://api.jobned.com/v1/sites/');
         $token = 'as214SY@Jlsa<Safak';
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
