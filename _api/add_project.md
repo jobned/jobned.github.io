@@ -1,5 +1,5 @@
 ---
-title: /add_projects/
+title: /add_project/
 position_number: 1.4
 type: post
 description: Добавление проекта
