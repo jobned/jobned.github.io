@@ -14,23 +14,7 @@ parameters:
   - name: start_from
     content: Получить проекты новее определенного id
 content_markdown: |-
-  Update an existing book in your collection.<br />
-  "sites": <br />
-    [<br />
-      {<br />
-        "id" : 1,<br />
-        "subcat" : [1,2],<br />
-        },<br />
-        {<br />
-          "id" : 2,<br />
-          "budgets" : {<br />
-            "budget" : 300,<br />
-            "budget_to" : 1500,<br />
-            "budget_per_hour" : 15,<br />
-            "budget_per_hour_to" : 2000<br />
-          }<br />
-      }<br />
-    ]
+  Update an existing book in your collection.
 
   Этот вызов вернет максимум 100 проектов
   {: .info }
