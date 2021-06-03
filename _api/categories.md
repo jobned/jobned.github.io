@@ -13,7 +13,7 @@ left_code_blocks:
         <?php
         $base = 'https://api.jobned.com/v1';
         $ch = curl_init($base . '/categories/');
-        $token = 'as214SY@Jlsa<Safak';
+        $token = 'Your API key';
         $data = array(
             "sites" => [1,2] // массив бирж
         );

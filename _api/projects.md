@@ -20,7 +20,7 @@ left_code_blocks:
       <?php
       $base = 'https://api.jobned.com/v1';
       $ch = curl_init($base . '/projects/');
-      $token = 'as214SY@Jlsa<Safak';
+      $token = 'Your API key';
       $data = array(
         "sites" => [ // массивы фильтрации по биржам, категориям, бюджетам
             [
