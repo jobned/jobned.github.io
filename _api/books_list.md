@@ -6,6 +6,7 @@ description: Получить список проектов
 parameters:
   - name: sites
     content: Массив фильтрации
+    - code_block: |-
     "sites": [
         {
             "id" : 1,
@@ -25,6 +26,7 @@ parameters:
     ]
   - name: keywords
     content: Массив ключевых слов
+    - code_block: |-
     "keywords" : ["html", "web"]
   - name: start_from
     content: Получить проекты новее определенного id
