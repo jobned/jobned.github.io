@@ -9,7 +9,7 @@ content_markdown: |-
   Для получения API ключа напишите на почту <a href="mailto:partners@jobned.com">partners@jobned.com</a>.
 
   Добавьте ключ API ко всем запросам в качестве HTTP заголовка:
-  Authorization: Bearer <ваш API ключ>
+  Authorization: Bearer API ключ
 
   Ничего не будет работать, если вы не укажете этот ключ API.
   {: .error}
@@ -18,7 +18,7 @@ left_code_blocks:
     title:
     language:
 right_code_blocks:
-  - code_block: |1-
+  - code_block: |-
         $ch = curl_init('https://api.jobned.com/v1/sites/');
         $token = 'as214SY@Jlsa<Safak';
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
