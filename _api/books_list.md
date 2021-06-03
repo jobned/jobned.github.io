@@ -46,7 +46,7 @@ right_code_blocks:
         {
           "id": "1622729542595",
           "name": "MVP product using Betfair API",
-          "text": "I&#039;m looking for someone who can build an MVP product which uses the Betfair API. <br /><br />\nThe product would be a web app that uses the Betfair API to obtain odds and then add to betslip in betfair to place the bets. <br /><br />\nFirst off I need to know if my idea is viable and can be achieved. Then to build an MVP to test it works.<br />",
+          "text": "I'm looking for someone who can build an MVP product which uses the Betfair API. The product would be a web app that uses the Betfair API to obtain odds and then add to betslip in betfair to place the bets. First off I need to know if my idea is viable and can be achieved. Then to build an MVP to test it works.",
           "budgets": {
             "budget": "1000",
             "budget_to": "0",
@@ -74,7 +74,7 @@ right_code_blocks:
         {
           "id": "1622729477629",
           "name": "A product company is looking for a permanent React frontend developer",
-          "text": "Codedo Limited is a provider of video streaming, transcoding, processing, live composition, storage and delivery solutions. We are looking for a React developer to extend our core team. Primary responsibility is the extension and continued development of a club sound-oriented product that we co-own, the product has ample venture backing and lots of traction.<br /><br />\nInitial tasks will consist of building out a React frontend for an Electron.js application (no Electron-specific skills needed), continuing with development of fan web interface.<br />",
+          "text": "Codedo Limited is a provider of video streaming, transcoding, processing, live composition, storage and delivery solutions. We are looking for a React developer to extend our core team. Primary responsibility is the extension and continued development of a club sound-oriented product that we co-own, the product has ample venture backing and lots of traction. Initial tasks will consist of building out a React frontend for an Electron.js application (no Electron-specific skills needed), continuing with development of fan web interface.",
           "budgets": {
             "budget": "0",
             "budget_to": "0",
