@@ -19,19 +19,22 @@ left_code_blocks:
     language:
 right_code_blocks:
   - code_block: |-
-      $ch = curl_init('https://api.jobned.com/v1/sites/');
-      $token = 'Your API key';
+      <?php
+      $base = 'https://api.jobned.com/v1';
+      $ch = curl_init($base . '/sites/');
+      $token = 'as214SY@Jlsa<Safak';
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET"); 
-      curl_setopt($ch, CURLOPT_HEADER, true);
+      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+      curl_setopt($ch, CURLOPT_HEADER, false);
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
       $authorization = 'Authorization: Bearer ' . $token;
-      curl_setopt($ch, CURLOPT_HTTPHEADER, $authorization);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array($authorization));
       $responce = curl_exec($ch);
       curl_close($ch);
       var_dump(json_decode($responce, true));
+      ?>
     title: PHP
     language: php
 ---
