@@ -6,6 +6,9 @@ description: Получить список проектов
 parameters:
   - name: sites
     content: Массив фильтрации 
+    parameters:
+      - name: sites
+        content: Массив фильтрации 
   - name: keywords
     content: Массив ключевых слов
   - name: start_from
