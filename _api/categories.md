@@ -80,7 +80,7 @@ right_code_blocks:
     language: json
   - code_block: |2-
       {
-        "error": "Wrong api key"
+        "error": "Site id is required"
       }
     title: Error
     language: json
