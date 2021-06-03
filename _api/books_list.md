@@ -12,7 +12,7 @@ parameters:
     content: Получить проекты новее определенного id
 content_markdown: |-
   Update an existing book in your collection.
-parameters:
+sites:
   - name: sites
     content: Массив фильтрации 
 content_markdown: |-
