@@ -7,7 +7,8 @@ parameters:
 content_markdown: |-
   Вам необходимо пройти аутентификацию для всех запросов API. Для получения API ключа напишите на почту <a href="mailto:partners@jobned.com">partners@jobned.com</a>.
 
-  Добавьте ключ API ко всем запросам в качестве HTTP заголовка "Authorization: Bearer <ваш API ключ>.
+  Добавьте ключ API ко всем запросам в качестве HTTP заголовка:
+  Authorization: Bearer <ваш API ключ>
 
   Ничего не будет работать, если вы не укажете этот ключ API.
   {: .error}
