@@ -13,7 +13,7 @@ left_code_blocks:
       {
         "sites" : [1,2] // массив бирж
       }
-    title: Пример массива тела запроса
+    title: Пример массива запроса
     language: php
 right_code_blocks:
   - code_block: |2-
