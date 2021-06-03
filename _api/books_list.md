@@ -14,7 +14,7 @@ sites:
   - name: sites
     content: Массив фильтрации 
 content_markdown: |-
-  Update an existing book in your collection.
+  Update an existing book in your collection1.
 
   Этот вызов вернет максимум 100 проектов
   {: .info }
