@@ -17,28 +17,47 @@ content_markdown: |-
   {: .info }
 left_code_blocks:
   - code_block: |-
-      {
-        "sites": [ // массивы фильтрации по биржам, категориям, бюджетам
-          {
-            "id" : 1, // id биржи
-            "cat" : [1], // массив id картегорий
-            "subcat" : [30,45], // массив id подкатегорий (Указывайте только подкатегории которые не входят в категории выше)
-          },
-          {
-            "id" : 2, // id биржи
-            "budgets" : { // массив фильтрации по бюджетам (ипользуется валюта биржи)
-              "budget" : 300, // бюджет от
-              "budget_to" : 1500, // бюджет до
-              "budget_per_hour" : 15, // бюджет в час от
-              "budget_per_hour_to" : 2000, // бюджет в час до
-              "price_per_symbol" : 10 // бюджет за 1000 знаков (только для контентных бирж)
-            }
-          }
-        ],
-        "keywords" : ["html", "web"], // массив с ключевыми словами или словосочетаниями
-        "start_from" : 1622644515080 // получить проекты новее id в таком случае массив будет построен от старых к новым
-      }
-    title: Пример массива запроса
+      <?php
+      $base = 'https://api.jobned.com/v1';
+      $ch = curl_init($base . '/projects/');
+      $token = 'as214SY@Jlsa<Safak';
+      $data = array(
+          "sites" => [ // массивы фильтрации по биржам, категориям, бюджетам
+            [
+              "id" => 1, // id биржи
+              "cat" => [1], // массив id картегорий
+              "subcat" => [30,45], // массив id подкатегорий (Указывайте только подкатегории которые не входят в категории выше)
+            ],
+            [
+              "id" => 2, // id биржи
+              "budgets" => [ // массив фильтрации по бюджетам (ипользуется валюта биржи)
+                "budget" => 300, // бюджет от
+                "budget_to" => 1500, // бюджет до
+                "budget_per_hour" => 15, // бюджет в час от
+                "budget_per_hour_to" => 2000, // бюджет в час до
+                "price_per_symbol" => 10 // бюджет за 1000 знаков (только для контентных бирж)
+              ]
+            ]
+          ],
+          "keywords" => ["html", "web"], // массив с ключевыми словами или словосочетаниями
+          "start_from" => 1622644515080 // получить проекты новее id в таком случае массив будет построен от старых к новым
+        );
+      $data_string = json_encode($data);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+      curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+      curl_setopt($ch, CURLOPT_HEADER, false);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+      $authorization = 'Authorization: Bearer ' . $token;
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array($authorization));
+      $responce = curl_exec($ch);
+      curl_close($ch);
+      $responce = json_decode($responce, true);
+      var_dump($responce);
+      ?>
+    title: Пример запроса php
     language: php
 right_code_blocks:
   - code_block: |2-

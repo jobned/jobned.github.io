@@ -33,7 +33,8 @@ right_code_blocks:
       curl_setopt($ch, CURLOPT_HTTPHEADER, array($authorization));
       $responce = curl_exec($ch);
       curl_close($ch);
-      var_dump(json_decode($responce, true));
+      $responce = json_decode($responce, true);
+      var_dump($responce);
       ?>
     title: PHP
     language: php
