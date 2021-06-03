@@ -11,8 +11,7 @@ parameters:
   - name: start_from
     content: Получить проекты новее определенного id
 content_markdown: |-
-  Update an existing book in your collection.
-  123
+  Update an existing book in your collection./n123
 
   Этот вызов вернет максимум 100 проектов
   {: .info }
