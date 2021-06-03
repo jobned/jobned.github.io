@@ -27,7 +27,7 @@ right_code_blocks:
             "url": "https://freelancehunt.com",
             "currency": "₴",
             "logo": "https://jobned.com/img/sites/Freelancehunt.com.png"
-        },
+        }
       ]
     title: Response
     language: json
