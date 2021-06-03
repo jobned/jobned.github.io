@@ -39,7 +39,7 @@ left_code_blocks:
         "start_from" : 1622644515080 // получить проекты новее id
       }
     title: Пример массива тела запроса
-    language: json
+    language: php
 right_code_blocks:
   - code_block: |2-
       [
