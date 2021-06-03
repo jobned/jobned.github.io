@@ -5,22 +5,20 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  Welcome to our API.
+  Добро пожаловать в наш API.
 
-  This API document is designed for those interested in developing for our platform.
+  API все еще находится в стадии разработки и будет развиваться.
 
-  This API is still under development and will evolve.
-
-  You'll succeed if you do this.
+  У тебя все получится, если ты сделаешь это.
   {: .success }
 
-  Here's some useful information.
+  Вот некоторая полезная информация.
   {: .info }
 
-  Something may not happen if you try and do this.
+  Что-то может не случиться, если вы попробуете это сделать.
   {: .warning }
 
-  Something bad will happen if you do this.
+  Что-то плохое случится, если ты сделаешь это.
   {: .error }
 left_code_blocks:
   - code_block:
