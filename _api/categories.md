@@ -5,9 +5,9 @@ type: post
 description: Получить список категорий
 parameters:
   - name: sites
-    content: Массив с id бирж
+    content: Массив с id бирж *
 content_markdown: |-
-  Возвращает массив категорий и подкатегорий.
+  Возвращает массив категорий и подкатегорий.<br />Поля отмеченные * обязательны!
 left_code_blocks:
   - code_block: |-
         <?php
