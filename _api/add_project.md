@@ -24,7 +24,7 @@ content_markdown: |-
 left_code_blocks:
   - code_block: |-
       <?php
-      $base = 'https://api.jobned.com/v1';
+      $base = 'https://jobned.com/api/v1';
       $ch = curl_init($base . '/add_project/');
       $token = 'Your API key';
       $data = array(
